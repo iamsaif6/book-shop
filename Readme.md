@@ -1,18 +1,12 @@
-# 96 Buks
+# Book Shop - online e-Book site
 
 <br>
 
-<img src="https://github.com/iamsaif6/96-buks/blob/master/Screenshot%202021-06-06%20at%2010-19-45%2096Buks%20My%201st%20Adobe%20XD%20to%20Html.png" width="800px" />
+<img src="https://github.com/iamsaif6/book-shop/blob/master/Screenshot%202021-06-06%20at%2010-35-51%20Book%20Shop.png" width="800px" />
 
-> ## For live preview : [Click Here](https://iamsaif6.github.io/96-buks/ "96 Buks")
+> ## For live preview : [Click Here](https://iamsaif6.github.io/book-shop/ "Book shop")
 
  <br>
-
-### Get started (Make sure you have installed node.js)
-
-- Open Git Bash or VS code terminal on Default Folder
-- Enter `npm install` to install the require file for scss compiles.
-- Enter `npm start` to start the compiles.
 
 ## Tools and Technology Used :
 
