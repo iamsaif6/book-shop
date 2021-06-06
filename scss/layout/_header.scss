@@ -1,0 +1,67 @@
+.header{
+
+    position: relative;
+    
+    &__flex{
+        display: flex;
+        align-items: center;
+
+        @include respond(500px){
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        @include respond(800px){
+            margin-top: 8rem;
+        }
+    }
+
+    &__text{
+        flex:  0 0 50%;
+
+        @include respond(700px){
+            flex:  0 0 60%;
+        }
+
+        @include respond(500px){
+            text-align: center;
+            flex:  1;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__img{
+
+        
+
+        &-photo{
+            width: 10%;
+            transform: translateX(-20%);
+            position: relative;
+            z-index: -1;
+
+            @include respond(500px){
+                transform: translateX(0%);
+            }
+        }
+        
+    }
+
+    &__side-img{
+        position: absolute;
+        top: 24rem;
+        right: 0;
+        width: 90%;
+        z-index: -1;
+
+        @include respond(1200px){
+            top: 35rem;
+        }
+
+        @include respond(500px){
+            top: 25rem;
+        }
+    }
+
+
+}

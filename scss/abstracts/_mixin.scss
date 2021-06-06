@@ -1,0 +1,46 @@
+
+
+@mixin respond($breakpoint) {
+
+    @if $breakpoint ==300px{
+        @media (max-width:18.75em) {@content}
+    };
+
+    @if $breakpoint ==400px{
+        @media (max-width:25em) {@content}
+    };
+
+    @if $breakpoint ==500px{
+        @media (max-width:31.25em) {@content}
+    };
+
+    @if $breakpoint ==600px{
+        @media (max-width:37.5em) {@content}
+    };
+
+    @if $breakpoint == 700px{
+        @media (max-width:43.75em) {@content}
+    };
+
+    @if $breakpoint == 800px{
+        @media (max-width:50em) {@content}
+    };
+
+    @if $breakpoint == 900px{
+        @media (max-width:56.25em) {@content}
+    };
+
+    @if $breakpoint == 1000px{
+        @media (max-width:62.55em) {@content}
+    };
+
+    @if $breakpoint == 1100px{
+        @media (max-width:68.75em) {@content}
+    };
+
+    @if $breakpoint == 1200px{
+        @media (max-width:75em) {@content}
+    };
+
+    
+}

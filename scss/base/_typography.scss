@@ -1,0 +1,67 @@
+h1,h2,h3,h4,h5{
+    color: #fff;
+}
+
+.header__subtitle{
+    font-size: 2rem;
+    color: #75D1C6;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    @include respond(600px){
+        font-size: 1.5rem;
+    }
+}
+
+.header__title{
+
+    font-size: 5rem;
+    margin-top: 1.5rem;
+
+    @include respond(900px){
+        font-size: 4rem;
+    }
+    @include respond(600px){
+        font-size: 3rem;
+    }
+
+    &--span{
+        font-size: 2.2rem;
+        font-weight: 300;
+        display: block;
+        margin: 1.5rem 0 3rem 0;
+        color: #BBAFCA;
+
+        @include respond(600px){
+            font-size: 1.7rem;
+        }
+    }
+}
+
+.section__title{
+
+}
+
+.section__header{
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+
+    @include respond(700px){
+        font-size: 3rem;
+    }
+}
+
+.section__subheader{
+    font-size: 1.7rem;
+    color: #8E829E;
+    font-weight: 300;
+    @include respond(700px){
+        font-size: 1.4rem;
+    }
+}
+
+.description{
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.6;
+}

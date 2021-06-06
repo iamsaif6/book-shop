@@ -1,0 +1,120 @@
+.service{
+
+    &__grid{
+        margin: 0 auto;
+        width: 80%;
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit , minmax(18rem , 1fr));
+        grid-column-gap: 5rem;
+        grid-row: auto;
+        grid-row-gap: 5rem;
+
+        @include respond(1100px){
+            width: 95%;
+        }
+
+        @include respond(1000px){
+            grid-column-gap: 3rem;
+        }
+    }
+
+    &__item{
+
+    }
+
+    &__img-box{
+        width: 15rem;
+        height: 15rem;
+        background-color: #16062A;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:  0 auto;
+        margin-bottom: 3rem;
+        position: relative;
+
+        @include respond(400px){
+            width: 12rem;
+            height: 12rem;
+        }
+
+        &::after{
+            position: absolute;
+            content: '';
+            width: 4rem;
+            height: 2px;
+            background-color: #101835;
+            top: 50%;
+            left: 100%;
+            transform: translate(50%,-50%);
+
+
+            @include respond(1100px){
+                display: none;
+            }
+        }
+
+        &::before{
+            position: absolute;
+            content: '';
+            width: 4rem;
+            height: 2px;
+            background-color: #101835;
+            top: 50%;
+            right: 100%;
+            transform: translate(-50%,-50%);
+
+            @include respond(1100px){
+                display: none;
+            }
+        }
+
+    }
+
+    &__count{
+        font-size: 1.3rem;
+        color: #fff;
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #12608E;
+        border-radius: 50%;
+        left: 0;
+        top: 0;
+        transform: translate(50%,50%);
+        font-weight: 500;
+
+        @include respond(400px){
+            top: -1rem;
+            left: -1rem;
+        }
+    }
+
+    &__img{
+        max-width:5rem;
+
+        @include respond(400px){
+            max-width: 4rem;
+        }
+    }
+
+    &__text{
+
+        .description{
+            font-size: 1.2rem;
+        }
+    }
+
+    &__header{
+        font-size: 1.6rem;
+        font-size: 600;
+        margin-bottom: 1rem;
+    }
+
+
+}

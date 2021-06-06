@@ -1,0 +1,35 @@
+
+*,
+*::after,
+*:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root{
+    --primary-color: #847893;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+    @include respond(1000px){
+        font-size: 55%;
+    }
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    color: var(--primary-color);
+    background: linear-gradient(90deg,rgb(39, 31, 94) , #1D2D5A);
+    overflow-x: hidden;
+
+    
+    
+}
+
+
